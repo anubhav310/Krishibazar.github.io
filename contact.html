@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - KrishiBazaar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">Krishi<span>Bazaar</span></a>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="english">Home</a><a href="index.html" class="hindi hidden">होम</a></li>
+                    <li><a href="marketplace.html" class="english">Marketplace</a><a href="marketplace.html" class="hindi hidden">मार्केटप्लेस</a></li>
+                    <li><a href="auctions.html" class="english">Auctions</a><a href="auctions.html" class="hindi hidden">नीलामी</a></li>
+                    <li><a href="about.html" class="english">About</a><a href="about.html" class="hindi hidden">हमारे बारे में</a></li>
+                    <li><a href="contact.html" class="english active">Contact</a><a href="contact.html" class="hindi hidden active">संपर्क</a></li>
+                </ul>
+            </nav>
+            <button class="language-toggle" id="languageToggle">
+                <span class="english">हिंदी</span>
+                <span class="hindi hidden">English</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3 class="english">Get In Touch</h3>
+                    <h3 class="hindi hidden">संपर्क करें</h3>
+                    <ul>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span class="english">KrishiBazaar HQ, New Delhi, India</span>
+                            <span class="hindi hidden">कृषि बाजार मुख्यालय, नई दिल्ली, भारत</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>+91 9044039110</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>info@krishibazaar.com</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span class="english">Monday - Friday: 9AM to 6PM</span>
+                            <span class="hindi hidden">सोमवार - शुक्रवार: सुबह 9 से शाम 6 बजे तक</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contact-form">
+                    <h3 class="english">Send Us a Message</h3>
+                    <h3 class="hindi hidden">हमें संदेश भेजें</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name" class="english">Your Name</label>
+                            <label for="name" class="hindi hidden">आपका नाम</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="english">Email Address</label>
+                            <label for="email" class="hindi hidden">ईमेल पता</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject" class="english">Subject</label>
+                            <label for="subject" class="hindi hidden">विषय</label>
+                            <input type="text" id="subject" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="english">Message</label>
+                            <label for="message" class="hindi hidden">संदेश</label>
+                            <textarea id="message" class="form-control" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn english">Send Message</button>
+                        <button type="submit" class="btn hindi hidden">संदेश भेजें</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3 class="english">KrishiBazaar</h3>
+                    <h3 class="hindi hidden">कृषि बाजार</h3>
+                    <p class="english">Empowering farmers through technology</p>
+                    <p class="hindi hidden">प्रौद्योगिकी के माध्यम से किसानों को सशक्त बनाना</p>
+                </div>
+                <div class="footer-column">
+                    <h3 class="english">Quick Links</h3>
+                    <h3 class="hindi hidden">त्वरित लिंक</h3>
+                    <ul>
+                        <li><a href="index.html" class="english">Home</a><a href="index.html" class="hindi hidden">होम</a></li>
+                        <li><a href="marketplace.html" class="english">Marketplace</a><a href="marketplace.html" class="hindi hidden">मार्केटप्लेस</a></li>
+                        <li><a href="auctions.html" class="english">Auctions</a><a href="auctions.html" class="hindi hidden">नीलामी</a></li>
+                        <li><a href="about.html" class="english">About</a><a href="about.html" class="hindi hidden">हमारे बारे में</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="english">Contact Us</h3>
+                    <h3 class="hindi hidden">हमसे संपर्क करें</h3>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +91 9044039110</li>
+                        <li><i class="fas fa-envelope"></i> info@krishibazaar.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> <span class="english">New Delhi, India</span><span class="hindi hidden">नई दिल्ली, भारत</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p class="english">&copy; 2025 KrishiBazaar. All rights reserved.</p>
+                <p class="hindi hidden">&copy; 2025 कृषि बाजार। सर्वाधिकार सुरक्षित।</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Language toggle functionality
+        document.getElementById('languageToggle').addEventListener('click', function() {
+            const englishElements = document.querySelectorAll('.english');
+            const hindiElements = document.querySelectorAll('.hindi');
+            
+            englishElements.forEach(el => {
+                el.classList.toggle('hidden');
+            });
+            
+            hindiElements.forEach(el => {
+                el.classList.toggle('hidden');
+            });
+        });
+
+        // Contact form submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! We will get back to you soon.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>

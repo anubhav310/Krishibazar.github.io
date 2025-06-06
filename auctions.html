@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auctions - KrishiBazaar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">Krishi<span>Bazaar</span></a>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="english">Home</a><a href="index.html" class="hindi hidden">होम</a></li>
+                    <li><a href="marketplace.html" class="english">Marketplace</a><a href="marketplace.html" class="hindi hidden">मार्केटप्लेस</a></li>
+                    <li><a href="auctions.html" class="english active">Auctions</a><a href="auctions.html" class="hindi hidden active">नीलामी</a></li>
+                    <li><a href="about.html" class="english">About</a><a href="about.html" class="hindi hidden">हमारे बारे में</a></li>
+                    <li><a href="contact.html" class="english">Contact</a><a href="contact.html" class="hindi hidden">संपर्क</a></li>
+                </ul>
+            </nav>
+            <button class="language-toggle" id="languageToggle">
+                <span class="english">हिंदी</span>
+                <span class="hindi hidden">English</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Auctions Section -->
+    <section class="marketplace">
+        <div class="container">
+            <div class="marketplace-header">
+                <h2 class="english">Live Auctions</h2>
+                <h2 class="hindi hidden">लाइव नीलामी</h2>
+            </div>
+            
+            <div class="products">
+                <!-- Auction 1 -->
+                <div class="product-card" onclick="showBidding('premium-potatoes')">
+                    <div class="product-image" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIIoCexBs7pGA8e0JQnaE0foh1emnFead--A&s');"></div>
+                    <div class="product-info">
+                        <h3 class="english">Premium Potatoes</h3>
+                        <h3 class="hindi hidden">प्रीमियम आलू</h3>
+                        <div class="product-meta">
+                            <span class="english">Uttar Pradesh</span>
+                            <span class="hindi hidden">उत्तर प्रदेश</span>
+                            <span>1500 kg</span>
+                        </div>
+                        <div class="bidding-timer english">Ends in: 2d 5h 30m</div>
+                        <div class="bidding-timer hindi hidden">समाप्ति: 2दिन 5घं 30मि</div>
+                        <div class="product-price english">Current Bid: ₹18/kg</div>
+                        <div class="product-price hindi hidden">वर्तमान बोली: 18 रु/किलो</div>
+                        <div class="product-actions">
+                            <button class="btn btn-sm english">Place Bid</button>
+                            <button class="btn btn-sm hindi hidden">बोली लगाएं</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Auction 2 -->
+                <div class="product-card" onclick="showBidding('fresh-onions')">
+                    <div class="product-image" style="background-image: url('https://5.imimg.com/data5/ANDROID/Default/2021/10/FM/ER/YP/108695390/img-20211022-wa0015-jpg-500x500.jpg');"></div>
+                    <div class="product-info">
+                        <h3 class="english">Fresh Onions</h3>
+                        <h3 class="hindi hidden">ताजे प्याज</h3>
+                        <div class="product-meta">
+                            <span class="english">Maharashtra</span>
+                            <span class="hindi hidden">महाराष्ट्र</span>
+                            <span>800 kg</span>
+                        </div>
+                        <div class="bidding-timer english">Ends in: 1d 12h 15m</div>
+                        <div class="bidding-timer hindi hidden">समाप्ति: 1दिन 12घं 15मि</div>
+                        <div class="product-price english">Current Bid: ₹30/kg</div>
+                        <div class="product-price hindi hidden">वर्तमान बोली: 30 रु/किलो</div>
+                        <div class="product-actions">
+                            <button class="btn btn-sm english">Place Bid</button>
+                            <button class="btn btn-sm hindi hidden">बोली लगाएं</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Auction 3 -->
+                <div class="product-card" onclick="showBidding('organic-wheat')">
+                    <div class="product-image" style="background-image: url('https://5.imimg.com/data5/SELLER/Default/2022/9/TN/IF/QS/19368006/wheat-seeds-500x500.jpg');"></div>
+                    <div class="product-info">
+                        <h3 class="english">Organic Wheat</h3>
+                        <h3 class="hindi hidden">जैविक गेहूं</h3>
+                        <div class="product-meta">
+                            <span class="english">Punjab</span>
+                            <span class="hindi hidden">पंजाब</span>
+                            <span>2000 kg</span>
+                        </div>
+                        <div class="bidding-timer english">Ends in: 3d 8h 45m</div>
+                        <div class="bidding-timer hindi hidden">समाप्ति: 3दिन 8घं 45मि</div>
+                        <div class="product-price english">Current Bid: ₹22/kg</div>
+                        <div class="product-price hindi hidden">वर्तमान बोली: 22 रु/किलो</div>
+                        <div class="product-actions">
+                            <button class="btn btn-sm english">Place Bid</button>
+                            <button class="btn btn-sm hindi hidden">बोली लगाएं</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3 class="english">KrishiBazaar</h3>
+                    <h3 class="hindi hidden">कृषि बाजार</h3>
+                    <p class="english">Empowering farmers through technology</p>
+                    <p class="hindi hidden">प्रौद्योगिकी के माध्यम से किसानों को सशक्त बनाना</p>
+                </div>
+                <div class="footer-column">
+                    <h3 class="english">Quick Links</h3>
+                    <h3 class="hindi hidden">त्वरित लिंक</h3>
+                    <ul>
+                        <li><a href="index.html" class="english">Home</a><a href="index.html" class="hindi hidden">होम</a></li>
+                        <li><a href="marketplace.html" class="english">Marketplace</a><a href="marketplace.html" class="hindi hidden">मार्केटप्लेस</a></li>
+                        <li><a href="auctions.html" class="english">Auctions</a><a href="auctions.html" class="hindi hidden">नीलामी</a></li>
+                        <li><a href="about.html" class="english">About</a><a href="about.html" class="hindi hidden">हमारे बारे में</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="english">Contact Us</h3>
+                    <h3 class="hindi hidden">हमसे संपर्क करें</h3>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +91 9044039110</li>
+                        <li><i class="fas fa-envelope"></i> info@krishibazaar.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> <span class="english">New Delhi, India</span><span class="hindi hidden">नई दिल्ली, भारत</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p class="english">&copy; 2025 KrishiBazaar. All rights reserved.</p>
+                <p class="hindi hidden">&copy; 2025 कृषि बाजार। सर्वाधिकार सुरक्षित।</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Language toggle functionality
+        document.getElementById('languageToggle').addEventListener('click', function() {
+            const englishElements = document.querySelectorAll('.english');
+            const hindiElements = document.querySelectorAll('.hindi');
+            
+            englishElements.forEach(el => {
+                el.classList.toggle('hidden');
+            });
+            
+            hindiElements.forEach(el => {
+                el.classList.toggle('hidden');
+            });
+        });
+
+        // Show bidding section
+        function showBidding(product) {
+            // In a real app, this would show details for the specific product
+            alert('In a real application, this would show the bidding interface for ' + product);
+        }
+    </script>
+</body>
+</html>

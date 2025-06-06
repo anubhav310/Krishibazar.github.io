@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KrishiBazaar - Farmer Marketplace</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">Krishi<span>Bazaar</span></a>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="english active">Home</a><a href="index.html" class="hindi hidden active">होम</a></li>
+                    <li><a href="marketplace.html" class="english">Marketplace</a><a href="marketplace.html" class="hindi hidden">मार्केटप्लेस</a></li>
+                    <li><a href="auctions.html" class="english">Auctions</a><a href="auctions.html" class="hindi hidden">नीलामी</a></li>
+                    <li><a href="about.html" class="english">About</a><a href="about.html" class="hindi hidden">हमारे बारे में</a></li>
+                    <li><a href="contact.html" class="english">Contact</a><a href="contact.html" class="hindi hidden">संपर्क</a></li>
+                </ul>
+            </nav>
+            <button class="language-toggle" id="languageToggle">
+                <span class="english">हिंदी</span>
+                <span class="hindi hidden">English</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <h1 class="english">Connecting Farmers to Markets</h1>
+            <h1 class="hindi hidden">किसानों को बाजार से जोड़ना</h1>
+            <p class="english">Empowering farmers by providing direct access to buyers through our transparent bidding platform.</p>
+            <p class="hindi hidden">हमारे पारदर्शी बोली प्लेटफॉर्म के माध्यम से किसानों को खरीदारों तक सीधी पहुंच प्रदान करना।</p>
+            <div>
+                <a href="#user-selection" class="btn english">Get Started</a>
+                <a href="#user-selection" class="btn hindi hidden">शुरू करें</a>
+                <a href="about.html" class="btn btn-outline english">Learn More</a>
+                <a href="about.html" class="btn btn-outline hindi hidden">और जानें</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- User Type Selection -->
+    <section class="user-selection" id="user-selection">
+        <div class="container">
+            <h2 class="english">Are you a Farmer or Buyer?</h2>
+            <h2 class="hindi hidden">आप किसान हैं या खरीदार?</h2>
+            <div class="user-cards">
+                <a href="farmer-register.html" class="user-card">
+                    <i class="fas fa-tractor"></i>
+                    <h3 class="english">Farmer</h3>
+                    <h3 class="hindi hidden">किसान</h3>
+                    <p class="english">Sell your crops directly to buyers at competitive prices</p>
+                    <p class="hindi hidden">अपनी फसल सीधे खरीदारों को प्रतिस्पर्धी कीमतों पर बेचें</p>
+                </a>
+                <a href="buyer-dashboard.html" class="user-card">
+                    <i class="fas fa-store"></i>
+                    <h3 class="english">Buyer</h3>
+                    <h3 class="hindi hidden">खरीदार</h3>
+                    <p class="english">Purchase quality produce directly from farmers</p>
+                    <p class="hindi hidden">किसानों से सीधे गुणवत्तापूर्ण उत्पाद खरीदें</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3 class="english">KrishiBazaar</h3>
+                    <h3 class="hindi hidden">कृषि बाजार</h3>
+                    <p class="english">Empowering farmers through technology</p>
+                    <p class="hindi hidden">प्रौद्योगिकी के माध्यम से किसानों को सशक्त बनाना</p>
+                </div>
+                <div class="footer-column">
+                    <h3 class="english">Quick Links</h3>
+                    <h3 class="hindi hidden">त्वरित लिंक</h3>
+                    <ul>
+                        <li><a href="index.html" class="english">Home</a><a href="index.html" class="hindi hidden">होम</a></li>
+                        <li><a href="marketplace.html" class="english">Marketplace</a><a href="marketplace.html" class="hindi hidden">मार्केटप्लेस</a></li>
+                        <li><a href="auctions.html" class="english">Auctions</a><a href="auctions.html" class="hindi hidden">नीलामी</a></li>
+                        <li><a href="about.html" class="english">About</a><a href="about.html" class="hindi hidden">हमारे बारे में</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="english">Contact Us</h3>
+                    <h3 class="hindi hidden">हमसे संपर्क करें</h3>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +91 9044039110</li>
+                        <li><i class="fas fa-envelope"></i> info@krishibazaar.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> <span class="english">New Delhi, India</span><span class="hindi hidden">नई दिल्ली, भारत</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p class="english">&copy; 2025 KrishiBazaar. All rights reserved.</p>
+                <p class="hindi hidden">&copy; 2025 कृषि बाजार। सर्वाधिकार सुरक्षित।</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Language toggle functionality
+        document.getElementById('languageToggle').addEventListener('click', function() {
+            const englishElements = document.querySelectorAll('.english');
+            const hindiElements = document.querySelectorAll('.hindi');
+            
+            englishElements.forEach(el => {
+                el.classList.toggle('hidden');
+            });
+            
+            hindiElements.forEach(el => {
+                el.classList.toggle('hidden');
+            });
+        });
+
+        // Set active nav link
+        document.addEventListener('DOMContentLoaded', function() {
+            const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+            const navLinks = document.querySelectorAll('nav a');
+            
+            navLinks.forEach(link => {
+                if (link.getAttribute('href') === currentPage) {
+                    link.classList.add('active');
+                } else {
+                    link.classList.remove('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
